@@ -7,12 +7,93 @@
     tools:context=".presentation.MainActivity">
 
     <TextView
+        android:id="@+id/tv_nameOfTheCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="City: Moscow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_CurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current temp : 0°"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nameOfTheCity" />
+
+    <TextView
+        android:id="@+id/tv_HighestTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest temp : 0°"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_CurrentTemp" />
+
+    <TextView
+        android:id="@+id/tv_LowestTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lowest temp : 0°"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_HighestTemp" />
+
+    <TextView
+        android:id="@+id/tv_Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity : 0%"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_LowestTemp" />
+
+    <TextView
+        android:id="@+id/tv_WindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind speed: 0 km/h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Humidity" />
+
+    <TextView
+        android:id="@+id/tv_Cloudiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloudiness : 0%°"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_WindSpeed" />
+
+    <TextView
+        android:id="@+id/tv_SunriseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise: 00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Cloudiness" />
+
+    <TextView
+        android:id="@+id/tv_SunsetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset: 00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_SunriseTime" />
+
+    <ImageView
+        android:id="@+id/iv_WeatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_SunsetTime"/>
+
+    <Button
+        android:id="@+id/btn_loadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

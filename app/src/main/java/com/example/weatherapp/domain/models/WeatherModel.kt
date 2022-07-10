@@ -1,6 +1,6 @@
 package com.example.weatherapp.domain.models
 
-data class WeatherModel(
+data class WeatherModel (
     val base: String,
     val clouds: Clouds,
     val cod: Int,
